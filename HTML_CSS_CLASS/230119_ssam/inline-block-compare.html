@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    <태그(tag)>내용(content)</태그(tag)>
+      -> 요소(element)
+
+    <태그(tag)>
+      <태그(tag)>내용(content)</태그(tag)>
+    </태그(tag)>
+      -> 요소(element)
+
+    html구문
+      br: 줄바꿈
+      div : 상자(레이아웃)
+        - width, height값이 적용 O
+        - margin, padding의 좌, 우, 위, 아래 값이 적용 O
+        - width값(가로값)이 없을 경우(auto) 부모 요소 크기만큼 늘어나는 속성
+        - height값은 content내용만큼 자동으로 줄어드는 속성
+        - 줄바꿈 O
+      span : 글자
+        - width, height값이 적용 X
+        - margin의 위, 아래 값은 적용 X | 좌, 우의 값이 적용 O 
+        - padding의 좌, 우, 위, 아래 값이 적용 O
+        - 줄바꿈 X
+        - span태그끼리 형제로 설계되어 있는 경우 빈 칸을 허용하지 않도록 주의. 빈칸이 있게 되면 여백이 생김
+      a : 하이퍼링크
+      img: 이미지 표시
+
+      cf) margin과 padding은 4가지 값 : 위 오른쪽 아래 왼쪽
+          margin과 padding은 3가지 값 : 위 오른쪽-왼쪽 아래
+          margin과 padding은 2가지 값 : 위-아래 오른쪽-왼쪽
+          margin과 padding은 1가지 값 : 위-아래-오른쪽-왼쪽
+      cf2) margin-left, margin-right, margin-top, margin-bottom
+           padding-left, padding-right, padding-top, padding-bottom
+      cf3) 인라인요소(inline)안의 내용은 블록요소(block)안의 내용이 올 수 없다.(사용하지 않음)
+           블록요소(block) 부모가 인라인요소(inline)이면 그 다음 부모의 블록요소 css속성값을 따름
+
+    css구문(속성)
+      width
+      height
+      margin(margin-left, margin-right, margin-top, margin-bottom)
+      padding(padding-left, padding-right, padding-top, padding-bottom)
+      border
+      background-color  
+      display
+  -->
+  <p style="">Hello World</p>
+
+  <div style="">Hello</div><div>World</div>
+  <br style=""><br>
+
+  <span>Hello</span><span>World</span>
+  <br><br>
+
+  <!-- inline-block 요소(width, height값이 적용 O) -->
+  <span style="display: inline-block; border: 2px solid red; margin:0; width:200px; height:60px; background-color: royalblue;">Hello</span>
+  <span style="display: inline-block; border: 2px solid red; margin:0; width:300px; background-color: orange;">World</span>
+  <br><br>
+
+  <!-- span를 블록요소로 변경 -->
+  <span style="display: block;">Hello</span>
+  <span style="display: block;">World</span>
+  <br><br>
+
+  <!-- div를 인라인 요소로 변경 -->
+  <div style="display: inline;">Hello</div>
+  <div style="display: inline;">World</div>
+  <br><br>
+
+  <span style="width:400px; background-color: red;">
+    <div style="width: 300px; background-color: green;">A</div>
+    <div style="background-color: royalblue;">B</div>
+  </span>
+  <br><br>
+  <div style="width:400px; background-color: red;">
+    <span style="width: 300px; background-color: green;">A</span>
+    <div>B</div>
+  </div>
+
+  <br><br>
+  <div style="width:auto; height:auto; background-color: red;">Hello</div>
+  <br><br>
+  <span style="padding-left: 80px; padding-right: 30px; margin-bottom: 2000px; border: 3px solid red; background-color: royalblue;">패딩 좌 50픽셀, 패딩 우 30픽셀</span>
+  <span style="margin-left: 80px; margin-right: 30px; margin-bottom: 2000px; border: 3px solid red; background-color: royalblue;">패딩 좌 50픽셀, 패딩 우 30픽셀</span>
+  <br><br><br><br>
+  <span style="width:1000px; margin: 20px; padding: 50px; border: 3px solid red; background-color: royalblue;">Hello</span>
+  <span style="height:1000px; margin: 20px; padding: 50px; border: 3px solid green; background-color: orange;">World</span>
+  <br><br><br><br>
+  <div style="width:1000px; margin: 50px; padding: 50px; height:50px; border: 3px solid red;background-color: royalblue;">Hello</div>
+  <div style="width:100px; margin: 50px; padding: 50px; height:1000px; border: 3px solid green; background-color: orange;">World</div>
+  <br><br><br><br>
+  <div style="width:1000px; height:auto; border: 3px solid red; background-color: royalblue;">Hello</div>
+  <div style="height:1000px; width:auto; border: 3px solid green; background-color: orange;">World</div>  
+  
+  <br><br><br><br>
+  <!-- 인라인요소는 본질적으로 Contents 영역을 설정을 하기 위해서 사용 -->
+  <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis dolor asperiores totam accusamus, ipsam mollitia iusto quod necessitatibus? A corrupti, facere eius ipsum vero iure quas magnam quidem laborum delectus!</span>
+  <br><br><br>
+  <!-- 블록요소는 본질적으로 화면 영역을 설정을 하기 위해서 사용 -->
+  <div>Lorem ipsum dolor sit, amet consectetur adipisicingelit. Minus, ut accusamus facilis quo in laudantium, ipsum corrupti fugit, iusto laboriosam nulla repellendus eos repudiandae? Obcaecati nemo eaque et aliquid atque?</div>
+  <br><br><br>
+  <div>Lorem ipsum dolor sit, amet consectetur adipisicin</div>
+  <div>gelit. Minus, ut accusamus facilis quo in</div>
+  <div>laudantium, ipsum corrupti fugit, iusto laboriosam</div>
+  <div>nulla repellendus eos repudiandae? Obcaecati nemo</div>
+  <div>eaque et aliquid atque?</div>
+</body>
+</html>
