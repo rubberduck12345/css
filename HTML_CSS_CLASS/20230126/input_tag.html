@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/HTML_CSS_CLASS/css/common.css">
+    <link rel="stylesheet" href="/css/HTML_CSS_CLASS/css/style.css">
+    <title>Document</title>
+    
+    <style>
+        input[type="text"], input[type="checkbox"]:checked {
+            appearance: none;
+            outline: 5px solid orange;
+            border: 5px solid green;
+        }
+        input[type="radio"]:checked {
+            accent-color: palevioletred;
+            outline: none;
+        }
+        input[type="password"] {
+            appearance: none;
+            border: 1px solid palevioletred;
+            outline: none;
+        }
+        input[type="password"]:active {
+            appearance: none;
+            border: 2px solid palevioletred;
+            outline: none;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="" method="post">
+        <input class="w-300 h-40" type="text" placeholder="이름을 입력하세요">
+        <input class="w-100 h-100" type="button" value="버튼1">
+        <br>
+        <input class="w-40 h-40" type="checkbox" value="라디오박스1">음악
+        <input class="w-40 h-40" type="checkbox" value="라디오박스2">운동
+        <br>
+        <input class="w-80 h-80" type="color" value="#FABD0B">
+        <br>
+        <input class="w-300 h-60" type="date" value="2023-12-21">
+        <input class="w-300 h-60" type="datetime-local" value="2023-12-21 12:21">
+        <br>
+        <input class="w-300 h-40" type="file" value="파일명">
+        <br>
+        <input class="w-300 h-40 border-box" type="password" value="">패스워드
+        <br>
+        <input class="w-40 h-40" type="radio" value="" id="apple" name="fruit">
+        <label for="apple">사과</label>
+        <input class="w-40 h-40" type="radio" value="" id="banana" name="fruit">
+        <label for="banana">바나나</label>
+        <br>
+        <input class="w-100 h-40" type="submit" value="제출하기">
+        <input type="url">
+        <input type="tel">
+        <br>
+        <input class="w-300 h-40" type="week">
+        <br>
+        <input class="w-40 h-40" type="radio" value="" id="pig" name="animal">
+        <label for="pig">돼지</label>
+        <input class="w-40 h-40" type="radio" value="" id="dog" name="animal">
+        <label for="dog">강아지</label>
+        <input class="w-40 h-40" type="radio" value="" id="cat" name="animal">
+        <label for="cat">고양이</label>
+        <br>
+        <select class="w-100 h-200" size="4" multiple>
+            <option value="음악" selected>음악</option>
+            <option value="요리" selected>요리</option>
+            <option value="게임">게임</option>
+        </select>
+    </form>
+
+
+
+</body>
+</html>
