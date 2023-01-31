@@ -1,8 +1,3 @@
-img {
-    width:1000px;
-    height:auto;
-}
-
 .w-20 {
     width:20px;
 }
@@ -51,3 +46,7 @@ img {
 .border-box {
     box-sizing: border-box;
 }
+
+.fr {float: right;}
+.fl {float: left;}
+.clearfix::after {content: ""; display: block; clear: both;}
