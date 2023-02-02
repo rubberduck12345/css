@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/HTML_CSS_CLASS/css/common.css">
+    <link rel="stylesheet" href="/css/HTML_CSS_CLASS/css/style.css">
+    <link rel="icon" href="../img/favicon1.png">
+    <title>Document</title>
+</head>
+<body>
+    <div class="font-20" style="border:2px solid gray; padding:5px; margin:20px; width: fit-content;">
+        <table>
+            <caption class="bg-blue font-25 bold" style="margin-bottom:10px;">테이블 기본</ㅊ>
+            <!-- colgroup -->
+            <colgroup>
+                <col width="30%"/>
+                <col width="18%"/>
+                <col width="20%"/>
+                <col width="20%"/>
+                <col width="*"/>
+            </colgroup>
+            <!-- //colgroup -->
+            <!-- thead -->
+            <thead>
+                <tr>
+                    <td>날짜</td>
+                    <td>구분</td>
+                    <td>이름</td>
+                    <td>가격</td>
+                    <td>수량</td>
+                </tr>
+            </thead>
+            <!-- //thead -->
+            <!-- tbody -->
+            <tbody>
+                <tr>
+                    <td>2023-01-01</td>
+                    <td>과일</td>
+                    <td>사과</td>
+                    <td>15,500</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>2023-01-02</td>
+                    <td>채소</td>
+                    <td>시금치</td>
+                    <td>3,500</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2023-01-04</td>
+                    <td>과일</td>
+                    <td>배</td>
+                    <td>7,500</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>2023-01-11</td>
+                    <td>과일</td>
+                    <td>감</td>
+                    <td>8,500</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>2023-01-12</td>
+                    <td>채소</td>
+                    <td>당근</td>
+                    <td>1,500</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2023-01-22</td>
+                    <td>과일</td>
+                    <td>수박</td>
+                    <td>20,500</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            <!-- //tbody -->
+        </table>
+    </div>
+    <div class="font-20" style="border:2px solid gray; padding:5px; margin:10px; width: fit-content">
+        <table>
+            <caption class="bg-red font-25 bold" style="margin-bottom:10px;">테이블 colspan</caption>
+            <!-- <caption>쇼핑</caption> -->
+            <!-- colgroup -->
+            <colgroup>
+                <col width="30%"/>
+                <col width="18%"/>
+                <col width="*"/>
+                <col width="25%"/>
+                <!-- <col width="*"/> -->
+            </colgroup>
+            <!-- //colgroup -->
+            <!-- thead -->
+            <thead>
+                <tr>
+                    <td>날짜</td>
+                    <td colspan="2">식품</td>
+                    <!-- <td>이름</td> -->
+                    <td colspan="2">가격/수량</td>
+                    <!-- <td>수량</td> -->
+                </tr>
+            </thead>
+            <!-- //thead -->
+            <!-- tbody -->
+            <tbody>
+                <tr>
+                    <td>2023-01-01</td>
+                    <td rowspan="4">과일</td>
+                    <td>사과</td>
+                    <td>15,500</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>2023-01-04</td>
+                    <!-- <td>과일</td> -->
+                    <td>배</td>
+                    <td>7,500</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>2023-01-11</td>
+                    <!-- <td>과일</td> -->
+                    <td>감</td>
+                    <td>8,500</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>2023-01-22</td>
+                    <!-- <td>과일</td> -->
+                    <td>수박</td>
+                    <td>20,500</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>2023-01-02</td>
+                    <td rowspan="2">채소</td>
+                    <td>시금치</td>
+                    <td>3,500</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2023-01-12</td>
+                    <!-- <td>채소</td> -->
+                    <td>당근</td>
+                    <td>1,500</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+            <!-- //tbody -->
+        </table>
+    </div>
+</body>
+</html>
