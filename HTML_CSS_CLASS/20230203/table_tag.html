@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/HTML_CSS_CLASS/css/common.css">
+    <link rel="stylesheet" href="/css/HTML_CSS_CLASS/css/style.css">
+    <link rel="icon" href="../img/favicon2.png">
+    <title>Document</title>
+
+    <!-- 우선순위테스트 -->
+    <style>
+        .test {
+            background-color: skyblue;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="font-20" style="border:2px solid gray; padding:5px; margin:20px; width: fit-content;">
+        <table>
+            <caption class="bg-blue font-25 bold" style="margin-bottom:10px;">테이블 만들어보기</ㅊ>
+            <colgroup>
+                <col width="80px">
+                <col width="80px">
+                <col width="80px">
+                <col width="80px">
+                <col width="80px">
+            </colgroup>
+            <thead>
+                <tr>
+                    <td>제</td>
+                    <td>목</td>
+                    <td>입</td>
+                    <td>니</td>
+                    <td>다</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td colspan="3">3</td>
+                    <!-- <td></td> -->
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td rowspan="2">5</td>
+                    <td colspan="2">6</td>
+                    <td rowspan="3">7</td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <!-- <td></td> -->
+                    <td>9</td>
+                    <td>10</td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <!-- <td></td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- <div style="background-color: green; color:beige;" class="test"> -->
+    <div style="text-align: center; vertical-align: middle; line-height: 300px;" class="font-30 bold test w-300 h-300">
+        css 우선순위 테스트
+    </div>
+</body>
+</html>

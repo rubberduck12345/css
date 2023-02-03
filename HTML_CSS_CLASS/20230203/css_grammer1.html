@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            color :firebrick;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        p {
+            color: blue;
+        }
+        span {
+            color: orangered;
+        }
+        span.test1 {
+            color:orange
+        }
+        li {
+            float: left;
+            list-style-type: none;
+            padding: 5px 10px;
+        }
+        ul::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li>오렌지</li>
+            <li>당근</li>
+        </ul>
+        <div>
+            <p>p태그</p>
+            <span>span태그</span>
+            <span class="test1">span태그</span>
+        </div>
+    </div>
+</body>
+</html>
