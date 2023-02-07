@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/HTML_CSS_CLASS/css/common.css">
+    <link rel="stylesheet" href="/css/HTML_CSS_CLASS/css/style.css">
+    <link rel="icon" href="../img/favicon2.png">
+    <title>Document</title>
+    <style>
+        *, div {
+            margin: 0;
+            padding: 0;
+            background-color: lightpink;
+            color:darkred;
+            font-weight: 700;
+            font-size: 25px;
+        }
+        /* html 내에 있는 class속성과 일치할 때 적용됨 */
+        .publisher1 {
+            background-color: aquamarine;
+        }
+        .publisher2 {
+            background-color: aqua;
+        }
+        .bg-blue {
+            background-color: darkcyan;
+        }
+        .bg-red {
+            background-color: brown;
+        }
+        #wow1 {
+            color: bisque;
+            background-color: palevioletred;
+        }
+        #wow2 {
+            color: bisque;
+            background-color: violet;
+        }
+        header, footer {
+            background-color: black;
+            color: bisque;
+        }
+        main.section {
+            background-color: brown;
+            color: bisque;
+        }
+        main section {
+            background-color: darkred;
+            color: bisque;
+        }
+        main section aside {
+            background-color: cadetblue;
+            color: aquamarine;
+        }
+        p+span {
+            background-color: purple;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<span style="background-color: darkolivegreen;">
+    <header>
+        header입니다.
+    </header>
+    <div>
+        <div style="background-color: yellowgreen; padding-left: 10px;">나는 div</div>
+        <span style="background-color: yellow; padding-left: 40px;">나는 span</span>
+        <br>
+        <span class="publisher1">나는 class 반영된 span</span>
+        <span class="publisher2">publisher2</span>
+        <span class="bg-blue">bg-blue</span>
+        <br>
+        <div id="wow1">★id사용★</div>
+        <div id="wow2">★id사용★</div>
+        <div id="wow2" style="background-color:darkgreen;">★id사용+인라인태그★</div>
+        <div id="wow2" style="background-color:navy;">★id사용❤★</div>
+        <div id="wow2" style="background-color:orangered;">★id사용★</div>
+        <div id="wow2">★id사용★</div>
+        <main class="section">main.section적용CSS</main>
+        <main class="section">
+            <section>main > section에 적용</section>    
+        </main>
+        <main>
+            <section>
+                <aside>main>section>aside</aside>
+            </section>
+        </main>
+        <p>p태그</p>
+        <span>p태그 뒤에 오는 span태그</span>
+        <h1>h1태그</h1>
+        <span>h1태그 뒤에 오는 span태그</span>
+        <p>p태그</p>
+        <span>p태그 뒤에 오는 span태그</span>
+        <p>p태그</p>
+        <span>p태그 뒤에 오는 span태그</span>
+        <p>p태그</p>
+    </div>
+    <footer>
+        footer입니다.
+    </footer>
+</span>
