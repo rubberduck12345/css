@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/HTML_CSS_CLASS/css/common.css">
+    <link rel="stylesheet" href="/css/HTML_CSS_CLASS/css/style.css">
+    <link rel="icon" href="../img/favicon2.png">
+    <title>Document</title>
+    <style>
+
+        /* ------------test1------------ */
+        .test1 ul, .test2 ul {
+            list-style-type: none;
+            width: 300px;
+            font-size: 30px;
+        }
+        .test1 ul li {
+            color: brown;
+        }
+        .test1 ul li:empty::after {
+            content: '(-)';
+            color: red;
+        }
+        .test1 ul li:nth-child(odd) {
+            background-color: chocolate;
+            color: black;
+        }
+        .test1 ul li:nth-child(even) {
+            background-color: black;
+            color: white;
+        }
+        /* ------------test2------------ */
+        .test2 ul li:empty::after {
+            content: '(-)';
+            color: black;
+        }
+        .test2 ul li:nth-child(2n) {
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="test1" style="margin: 30px;">
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li>포도</li>
+            <li></li>
+            <li>망고</li>
+            <li>포도</li>
+            <li></li>
+            <li>망고</li>
+        </ul>
+    </div>
+
+    <div class="test2" style="margin: 30px;">
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li>포도</li>
+            <li></li>
+            <li>망고</li>
+            <li>포도</li>
+            <li></li>
+            <li>망고</li>
+        </ul>
+    </div>
+</body>
+</html>

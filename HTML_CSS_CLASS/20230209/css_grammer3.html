@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/HTML_CSS_CLASS/css/common.css">
+    <link rel="stylesheet" href="/css/HTML_CSS_CLASS/css/style.css">
+    <link rel="icon" href="../img/favicon2.png">
+    <title>Document</title>
+
+    <style>
+        a, span{
+            box-sizing: border-box;
+            text-decoration: none;
+            outline: none;
+            font-weight: 700;
+            color:whitesmoke;
+            font-size: 20px;
+            background-color: pink;
+            width: 200px;
+            height: 30px;
+            margin:5px;
+            text-align: center;
+            border: 1px solid transparent;
+        }
+
+        a:hover, a:active {
+            text-decoration: none;
+            color:whitesmoke;
+            background-color: #d87093;
+            border: 1px solid bisque;
+        }
+
+        a:visited {
+            color:whitesmoke;
+            background-color: #E23871;
+        }
+        .selector_test {
+            display: inline-block;
+            position: relative;
+            padding-left: 10px;
+            color: #045E5E;
+        }
+        .selector_test::before {
+            content: "";
+            position: absolute;
+            top:4px;
+            left: 4px;
+            background-color: darkcyan;
+            width: 20px;
+            height: 20px;
+        }
+        .test1 {
+            line-height: 25px;
+        }
+        input:checked +label{
+            color: #ad1c4c;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .test2 {
+            height: 45px;
+            width: 300px;
+            font-size: 25px;
+            font-weight: 700;
+            color: #7d43c9;
+        }
+        .test2::placeholder {
+            color: #8aa3f3;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content: flex-start; flex-direction: column;">
+        <a href="https://www.naver.com/" target="_blank">네이버로 이동하기</a>
+        <a href="https://www.google.com/" target="_blank">구글로 이동하기</a>
+        <a href="https://map.naver.com/" target="_blank">네이버로 이동하기</a>
+        <a href="https://www.daum.net/" target="_blank">다음으로 이동하기</a>
+        <a href="https://www.twitter.com/" target="_blank">트위터로 이동하기</a>
+        <a href="https://www.twitter.com/" target="_blank">트위터로 이동하기</a>
+        <a href="https://www.twitter.com/" target="_blank">트위터로 이동하기</a>
+        <div>
+            <span class="selector_test">
+                SELECTOR TEXT
+            </span>
+        </div>
+
+    </div>
+    <div class="test1">
+        <form action="">
+            <input type="checkbox" name="apple">
+            <label for="apple">사과</label>
+            <input type="checkbox" name="banana">
+            <label for="banana">사과</label>
+        </form>
+        <form action="">
+            <input type="radio" name="fruit">
+            <label for="fruit">사과</label>
+            <input type="radio" name="fruit">
+            <label for="fruit">사과</label>
+        </form>
+    </div>
+    <div>
+        <form action="">
+            <input class="test2" type="text" placeholder="★TEXT를 입력하세요★">
+        </form>
+    </div>
+
+</body>
+</html>
