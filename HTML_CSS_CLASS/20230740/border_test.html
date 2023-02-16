@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .testbox1 {
+            border:1px solid;
+            box-sizing: border-box;
+            width: 150px;
+            height: 150px;
+            line-height: 138px;
+            padding:5px;
+            color: darkred;
+            font-size: 20px;
+            text-align: center;
+        }
+        .outer-box {
+            border:1px solid #161616;
+            /* box-sizing: border-box; */
+            width: 200px;
+            height: 200px;
+            padding:10px;
+            color: darkred;
+            background-color: rgb(40, 55, 189);
+            margin-top: 20px;
+        }
+        .inner-box {
+            border:1px solid #161616;
+            /* box-sizing: border-box; */
+            width: 250px;
+            height: 80px;
+            /* line-height: 196px; */
+            padding:10px;
+            color: darkred;
+            font-size: 30px;
+            background-color: rgb(235, 221, 100);
+            
+        }
+        .hidden {
+            overflow:hidden;
+        }
+        .visible {
+            overflow:visible;
+        }
+        .image-radius {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            border:2px solid lightcoral;
+            margin:10px;
+        }
+        .image-radius2 {
+            border-radius: 100px;
+            border:1px solid grey;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="testbox1">w*h=100*100</div>
+    <div>
+        <div class="outer-box hidden">
+            <div class="inner-box ">hidden</div>
+        </div>
+        <div class="outer-box visible">
+            <div class="inner-box">visible</div>
+        </div>
+    </div>
+    <div>
+        <a href="https://www.naver.com">
+            <img src="../img/981.png" alt="naver" class="image-radius">  
+        </a>
+    </div>
+    <div class="image-radius2">
+        <img src="../img/work-8.jpg" alt="naver">
+    </div>
+</body>
+</html>
