@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .textopt {
+            color: whitesmoke;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            vertical-align: middle;
+            line-height: 100px;
+        }
+        .box {
+            width: 100%;
+        }
+        .header, .header2, .header3 {
+            height: 100px;
+            background-color:darkblue;
+            position: sticky;
+            top:0;
+        }
+        .content1 {
+            /* width: 700px; */
+            height: 1000px;
+            background-color:rgb(59, 160, 255);
+        }
+        .content2 {
+            /* width: 700px; */
+            height: 1000px;
+            background-color:rgb(135, 177, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="box textopt header">header</div> -->
+        <div class="box textopt content1">
+            <div class="box textopt header2">header2</div>
+            content1
+        </div>
+        <div class="box textopt content2">
+            <div class="box textopt header3">header3</div>
+            content2
+        </div>
+    </div>
+</body>
+</html>

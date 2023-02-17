@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 700px;
+            height: 500px;
+            background-color:rgb(208, 182, 255);
+        }
+        .item {
+            border:2px solid grey;
+            width: 200px;
+            height: 200px;
+        }
+        .item-1 {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+        }
+        .item-2 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            height: 150px;
+            background-color: rgb(255, 213, 24);
+        }
+        .item-3 {
+            position: absolute;
+            top: 200px;
+            left: 50px;
+            width: 250px;
+            height: 200px;
+            z-index: inherit;
+            background-color: rgb(255, 97, 24);
+        }
+        .item-4 {
+            position: absolute;
+            top: 130px;
+            left: 90px;
+            width: 230px;
+            height: 100px;
+            z-index: 1;
+            background-color: rgb(243, 63, 63);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">
+            <div class="item item-2"></div>
+            <div class="item item-3"></div>
+            <div class="item item-4"></div>
+        </div>
+    </div>
+</body>
+</html>
