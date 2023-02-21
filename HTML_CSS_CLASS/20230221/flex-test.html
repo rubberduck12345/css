@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .fd-col {
+            flex-direction: column;
+        }
+        .fd-row {
+            flex-direction: row;
+        }
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid salmon;
+            color: black;
+            font-size: 29px;
+            font-weight: 700;
+            line-height: 100px;
+            vertical-align: middle;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container fd-row">
+        <div class="flex-item">A</div>
+        <div class="flex-item">B</div>
+        <div class="flex-item">C</div>
+        <div class="flex-item">D</div>
+        <div class="flex-item">E</div>
+    </div>
+</body>
+</html>

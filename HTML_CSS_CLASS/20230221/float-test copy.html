@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fl {
+            float: left;
+        }
+        .fr {
+            float: right;
+        }
+        .container {
+            border: 1px solid darkred;
+            /* width:300px;
+            height:300px; */
+        }
+        .clearfix::after {
+            display: block;
+            clear: both;
+            content: '';
+        }
+        .item {
+            vertical-align: middle;
+            text-align: center;
+            line-height: 100px;
+            color: antiquewhite;
+            font-size: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+        }
+        .container .item:first-child{
+            background-color: blue;
+        }
+        .container .item:nth-child(2n){
+            background-color: darkcyan;
+
+        }
+        .container .item:nth-child(2n+1){
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div>
+            <img src="../img/cat.jpg" alt="cat" class="item fl" style="width:100px; height:100px; border-radius:50px;">
+        </div>
+        <div class="item fl">Personal</div>
+        <div class="item fl">Open Source</div>
+        <div class="item fl">Business</div>
+        <div class="item fl">메뉴4</div>
+        <div class="item fl">메뉴5</div>
+        <div class="item fl">메뉴6</div>
+        <div class="item fl">메뉴7</div>
+        <div class="item fl">메뉴8</div>
+        <div class="item fl">메뉴9</div>
+        <div class="item fl">메뉴10</div>
+        <!-- <div class="item">111111</div> -->
+    </div>
+    <div class="item">1</div>
+</body>
+</html>
