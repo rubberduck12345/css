@@ -10,19 +10,25 @@
     <title>Overwatch</title>
     <style>
         body {
-            background-image: url(../overwatch/bg.jpg);
+            background-image: url(../overwatch/bg.jpg) ;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
         .section {
-            padding: 50px;
+            min-width: 400px;
+            margin: 20px auto;
             display: flex;
             flex-wrap: wrap;
-            max-width: 600px;
+            max-width: 700px;
             justify-content: center;
-            margin: 0 auto;
         }
         .logo {
-            width: 300px;
-            height: 300px;
+            display: flex;
+            justify-content: center;
+            min-width:400px;
+            /* max-width: 500px; */
+            height: 200px;
+            /* margin: 0 30px; */
         }
         .logo-img {
             width: 100%;
@@ -30,11 +36,12 @@
             background-image: url(../overwatch/logo_overwatch.png);
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size:contain;
+            margin: 10px 0 ;
         }
         .icon {
             box-sizing: border-box;
-            width: 100px;
+            min-width: 100px;
             height: 100px;
             /* display: flex;
             flex-wrap: wrap; */
@@ -44,87 +51,152 @@
             overflow: hidden;
             background-color: #535353;
             margin: 5px;
-
-            /* @for $i from 1 through 32 {
-                &:nth-child(#{$i}).img {
-                    background-image:url("../overwatch/hero#{$i}.png");
-                }
-            } */
         }
         .icon:hover {
             transform: skewX(-15deg) scale(1.2);
             z-index: 2;
             background-color: orange;
+            transition: all .2s;
         }
         .img {
             width: 100%;
             height: 100%;
-            background-image: url(../overwatch/hero1.png);
             background-position:center;
             background-size: cover;
             background-repeat: no-repeat;
             transform: skewX(15deg)
         }
-    </style>
+        .hero1 {background-image: url(../overwatch/hero1.png);}
+        .hero2 {background-image: url(../overwatch/hero2.png);}
+        .hero3 {background-image: url(../overwatch/hero3.png);}
+        .hero4 {background-image: url(../overwatch/hero4.png);}
+        .hero5 {background-image: url(../overwatch/hero5.png);}
+        .hero6 {background-image: url(../overwatch/hero6.png);}
+        .hero7 {background-image: url(../overwatch/hero7.png);}
+        .hero8 {background-image: url(../overwatch/hero8.png);}
+        .hero9 {background-image: url(../overwatch/hero9.png);}
+        .hero10 {background-image: url(../overwatch/hero10.png);}
+        .hero11 {background-image: url(../overwatch/hero11.png);}
+        .hero12 {background-image: url(../overwatch/hero12.png);}
+        .hero13 {background-image: url(../overwatch/hero13.png);}
+        .hero14 {background-image: url(../overwatch/hero14.png);}
+        .hero15 {background-image: url(../overwatch/hero15.png);}
+        .hero16 {background-image: url(../overwatch/hero16.png);}
+        .hero17 {background-image: url(../overwatch/hero17.png);}
+        .hero18 {background-image: url(../overwatch/hero18.png);}
+        .hero19 {background-image: url(../overwatch/hero19.png);}
+        .hero20 {background-image: url(../overwatch/hero20.png);}
+        .hero21 {background-image: url(../overwatch/hero21.png);}
+        .hero22 {background-image: url(../overwatch/hero22.png);}
+        .hero23 {background-image: url(../overwatch/hero23.png);}
+        .hero24 {background-image: url(../overwatch/hero24.png);}
+        .hero25 {background-image: url(../overwatch/hero25.png);}
+        .hero26 {background-image: url(../overwatch/hero26.png);}
+        .hero27 {background-image: url(../overwatch/hero27.png);}
+        .hero28 {background-image: url(../overwatch/hero28.png);}
+        .hero29 {background-image: url(../overwatch/hero29.png);}
+        .hero30 {background-image: url(../overwatch/hero30.png);}
+        .hero31 {background-image: url(../overwatch/hero31.png);}
+        .hero32 {background-image: url(../overwatch/hero32.png);}
+        </style>
 </head>
 <body>
     <div class="section">
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero1"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero2"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero3"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero4"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero5"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero6"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero7"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero8"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero9"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero10"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero11"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero12"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero13"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero14"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero15"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero16"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero17"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero18"></div>
         </div>
         <div class="icon">
-            <div class="img"></div>
+            <div class="img hero19"></div>
+        </div>
+        <div class="icon">
+            <div class="img hero20"></div>
+        </div>
+        <div class="icon">
+            <div class="img hero21"></div>
+        </div>
+        <div class="icon">
+            <div class="img hero22"></div>
+        </div>
+        <div class="icon">
+            <div class="img hero23"></div>
+        </div>
+        <div class="icon">
+            <div class="img hero24"></div>
+        </div>
+        <div class="icon">
+            <div class="img hero25"></div>
+        </div>
+        <div class="icon">
+            <div class="img hero26"></div>
+        </div>
+        <div class="icon">
+            <div class="img hero27"></div>
+        </div>
+        <div class="icon">
+            <div class="img hero28"></div>
+        </div>
+        <div class="icon">
+            <div class="img hero29"></div>
+        </div>
+        <div class="icon">
+            <div class="img hero30"></div>
+        </div>
+        <div class="icon">
+            <div class="img hero31"></div>
+        </div>
+        <div class="icon">
+            <div class="img hero32"></div>
         </div>
     </div>
     <div class="logo">
