@@ -9,73 +9,170 @@
     <link rel="icon" href="../img/favicon2.png">
     <title>Starbucks</title>
     <style>
+        img {
+            vertical-align: top;
+            max-width: 100%;
+        }
+        .clearfix::after {
+            display: block;
+            clear: both;
+            content: '';
+        }
         .menu-bar {
-            display: flex;
-            justify-content: space-between;
+            height: 70px;
+            /* display: flex;
+            justify-content: space-between; */
         }
         .container {
+            /* background-attachment: fixed; */
             display: flex;
             flex-direction: column;
             width: 100%;
             height: 100%;
             background-image: url(../starbucks/2023_m_spring_top_bg.jpg);
-            /* background-attachment: fixed; */
             background-repeat: no-repeat;
             background-position: center top;
             background-size: cover;
         }
         .promo-wrap {
+            position: relative;
             height: 264vw;
+            /* margin-top: 300px; */
         }
         .badge1 {
+            position: fixed;
+            right:0;
+            top: 100px;
             width: 166px;
             height: 116px;
             background-image: url(../starbucks/WTLaV0_20230224171346499.png);
-            /* background-attachment: fixed; */
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             margin: 0 0 0 auto;
         }
-        .badge1::after {
-            display: block;
-            clear: both;
-            content: '';
+        .slogan {
+            /* position: fixed;
+            left:50px;
+            top: 100px;
+            display: inline-block; */
+            /* background-image: url(../starbucks/2023_m_spring_top_logo.png); */
+            /* background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain; */
+            width: 64%;
+            /* object-fit: contain; */
+            /* margin: 0 0 0 auto; */
         }
-        .promo {
-            width: 80%;
-            max-width: 100%;
-            height: 300px;
+        .drink-image {
+            width: 100%;
+            /* max-width: 100%; */
+            /* height: 300px; */
+            /* max-height: 800px; */
         }
-        .promo .image {
+        /* .promo .image {
             display: block;
             width: 100%;
             height: 100%;
             background-repeat: no-repeat;
             background-position: center;
             background-size: 70%;
+        } */
+        .fr {float:right;}
+        .fl {float:left;}
+        .menu-icons {
+            height: 70px;
+            /* display: flex;
+            flex-direction: row; */
+            /* flex-grow: ; */
         }
-        .promo .visual1 {background-image: url(../starbucks/2023_m_spring_top_drink1.png);margin: 0 auto 0 10px;}
-        .promo .visual2 {background-image: url(../starbucks/2023_m_spring_top_drink2.png);margin: 0 10px 0 auto;}
-        .promo .visual3 {background-image: url(../starbucks/2023_m_spring_top_drink3.png);margin: 0 auto 0 10px;}
+        .icon a img {
+            display: inline-block;
+            box-sizing: border-box;
+            padding:15px;
+            height: 100%;
+            width: 80%;
+        }
+        .icon.icon_m {
+            float: right;
+            display: flex;
+        }
+        .icon.icon_logo {
+            float: left;
+            display: flex;
+        }
+        .icon.icon_logo a img {
+            padding:7px 10px;
+        }
+        .badge2 {
+            position: absolute;
+            top: 13.9%;
+            left: 12.5%;
+            width: 72%;
+        }
+        .visual1 {
+            position: absolute;
+            top: 20%;
+            left: 10.5%;
+            width: 77%;
+        }
+        @media screen and (max-width:960px) {
+            .slogan,
+            .drink1,
+            .drink2,
+            .drink3 {
+            max-width: 100%;
+            /* display: block; */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="menu-bar">
-        <div>1</div>
-        <div>2</div>
+        <div class="menu-icons clearfix">
+            <div class="icon icon_logo">
+                <div class="">
+                    <a href="#">
+                        <img src="../starbucks/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="icon icon_m">
+                <div class="">
+                    <a href="#">
+                        <img src="../starbucks/icon_user_m.png" alt="">
+                    </a>
+                </div>
+                <div class="">
+                    <a href="#">
+                        <img src="../starbucks/icon_spot_m.png" alt="">
+                    </a>
+                </div>
+                <div class="">
+                    <a href="#">
+                        <img src="../starbucks/btn_berger_m.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container">
-        <div class="promo-wrap">
+        <div class="promo-wrap clearfix">
             <div class="badge1"></div>
-            <div class="promo">
-                <div class="image visual1"></div>
+            <div class="badge2 fl">
+                <img class="slogan"src="../starbucks/2023_m_spring_top_logo.png" alt="">
             </div>
-            <div class="promo">
-                <div class="image visual2"></div>
+            <div class="promo visual1">
+                <img class="drink-image drink1 fl" src="../starbucks/2023_m_spring_top_drink1.png" alt="">
+                <!-- <div class="image visual1"></div> -->
             </div>
-            <div class="promo">
-                <div class="image visual3"></div>
+            <div class="promo visual2">
+                <img class="drink-image drink2 fr" src="../starbucks/2023_m_spring_top_drink2.png" alt="">
+                <!-- <div class="image visual2"></div> -->
+            </div>
+            <div class="promo visual3">
+                <img class="drink-image drink3 fl" src="../starbucks/2023_m_spring_top_drink3.png" alt="">
+                <!-- <div class="image visual3"></div> -->
             </div>
             <div class="btn btn-detail">
                 <a href="">자세히 보기</a>
