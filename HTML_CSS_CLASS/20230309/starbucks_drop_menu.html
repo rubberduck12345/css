@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li, ul {
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .menu {
+            background-color: white;
+            /* width: 2000px; */
+            height: 300px;
+        }
+        .menu > ul > li.level1 {
+            /* width: 100px; */
+            float: left;
+            padding: 10px 50px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .menu > ul > li.level1 > a{
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 41px;
+        }
+        .menu > ul > li.level1:first-child {
+            position: relative;
+        }
+        .menu > ul > li.level1 > ul {
+            position: absolute;
+            left: 0;
+            top: 60px;
+            display: block;
+            visibility: hidden;
+            width: 100vw;
+            height: auto;
+            background-color: white;
+            /* color: white; */
+            /* transition: all 0.3s ease-in; */
+        }
+        .menu > ul > li.level1:hover {
+            background-color: #333;
+            transition: 0.3s;
+        }
+        .menu > ul > li.level1:hover a{
+            /* background-color: #333; */
+            /* transition: 2s; */
+            color: white;
+        }
+        .menu > ul > li.level1:hover > ul {
+            display: block;
+            visibility: visible;
+            background-color: #333;
+            /* color: white; */
+            transition: 0.3s;
+        }
+        .menu > ul > li.level1 > ul > li.level2 {
+            /* position: relative; */
+            width: 200px;
+            float: left;
+            padding: 20px;
+            text-align: left;
+            /* width: 700px; */
+        }
+        .menu > ul > li.level1 > ul > li.level2 > a {
+            display: inline-block;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: white;
+        }
+        .menu > ul > li.level1 > ul > li.level2 > ul > li.level3{
+            line-height: 22px;
+            font-size: 14px;
+            text-align: left;
+        }
+        .menu > ul > li.level1 > ul > li.level2 > ul > li.level3 > a {
+            color: #999;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li class="level1 clearfix">
+                <a href="#">COFFE</a>
+                <ul>
+                    <li class="level2">
+                        <a href="#">커피</a>
+                        <ul>
+                            <li class="level3"><a href="#">스타벅스 원두</a></li>
+                            <li class="level3"><a href="#">스타벅스 비아</a></li>
+                            <li class="level3"><a href="#">스타벅스앳홈 by 캡슐</a></li>
+                            <li class="level3"><a href="#">나와 어울리는 커피</a></li>
+                        </ul>
+                    </li>
+                    <li class="level2">
+                        <a href="#">커피 이야기</a>
+                        <ul>
+                            <li class="level3"><a href="#">농장에서 우리의 손으로</a></li>
+                            <li class="level3"><a href="#">최상의 아라비카 원두</a></li>
+                            <li class="level3"><a href="#">스타벅스 로스트 스펙트럼</a></li>
+                            <li class="level3"><a href="#">스타벅스 디카페인</a></li>
+                        </ul>
+                    </li>
+                    <li class="level2">
+                        <a href="#">커피</a>
+                        <ul>
+                            <li class="level3"><a href="#">스타벅스 원두</a></li>
+                            <li class="level3"><a href="#">스타벅스 비아</a></li>
+                            <li class="level3"><a href="#">스타벅스앳홈 by 캡슐</a></li>
+                            <li class="level3"><a href="#">나와 어울리는 커피</a></li>
+                        </ul>
+                    </li>
+                    <li class="level2">
+                        <a href="#">커피 이야기</a>
+                        <ul>
+                            <li class="level3"><a href="#">농장에서 우리의 손으로</a></li>
+                            <li class="level3"><a href="#">최상의 아라비카 원두</a></li>
+                            <li class="level3"><a href="#">스타벅스 로스트 스펙트럼</a></li>
+                            <li class="level3"><a href="#">스타벅스 디카페인</a></li>
+                        </ul>
+                    </li>
+                    <li class="level2">
+                        <a href="#">커피</a>
+                        <ul>
+                            <li class="level3"><a href="#">스타벅스 원두</a></li>
+                            <li class="level3"><a href="#">스타벅스 비아</a></li>
+                            <li class="level3"><a href="#">스타벅스앳홈 by 캡슐</a></li>
+                            <li class="level3"><a href="#">나와 어울리는 커피</a></li>
+                        </ul>
+                    </li>
+                    <li class="level2">
+                        <a href="#">커피 이야기</a>
+                        <ul>
+                            <li class="level3"><a href="#">농장에서 우리의 손으로</a></li>
+                            <li class="level3"><a href="#">최상의 아라비카 원두</a></li>
+                            <li class="level3"><a href="#">스타벅스 로스트 스펙트럼</a></li>
+                            <li class="level3"><a href="#">스타벅스 디카페인</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="level1 clearfix">
+                <a href="#">MENU</a>
+                <ul>
+                    <li class="level2">
+                        <a href="#">음료</a>
+                        <ul>
+                            <li class="level3"><a href="#">콜드 브루</a></li>
+                            <li class="level3"><a href="#">브루드 커피</a></li>
+                            <li class="level3"><a href="#">에스프레소</a></li>
+                            <li class="level3"><a href="#">프라푸치노</a></li>
+                            <li class="level3"><a href="#">블렌디드</a></li>
+                            <li class="level3"><a href="#">스타벅스 리프레셔</a></li>
+                            <li class="level3"><a href="#">스타벅스 피지오</a></li>
+                            <li class="level3"><a href="#">티(티바나)</a></li>
+                            <li class="level3"><a href="#">기타 제조 음료</a></li>
+                            <li class="level3"><a href="#">스타벅스 주스(병음료)</a></li>                            
+                        </ul>
+                    </li>
+                    <li class="level2">
+                        <a href="#">푸드</a>
+                        <ul>
+                            <li class="level3"><a href="#">브레드</a></li>
+                            <li class="level3"><a href="#">케이크</a></li>
+                            <li class="level3"><a href="#">샌드위치 & 샐러드</a></li>
+                            <li class="level3"><a href="#">따뜻한 푸드</a></li>
+                            <li class="level3"><a href="#">과일 & 요거트</a></li>
+                            <li class="level3"><a href="#">스낵 & 미니 디저트</a></li>
+                            <li class="level3"><a href="#">아이스크림</a></li>                            
+                        </ul>
+                    </li>
+                    <li class="level2">
+                        <a href="#">음료</a>
+                        <ul>
+                            <li class="level3"><a href="#">콜드 브루</a></li>
+                            <li class="level3"><a href="#">브루드 커피</a></li>
+                            <li class="level3"><a href="#">에스프레소</a></li>
+                            <li class="level3"><a href="#">프라푸치노</a></li>
+                            <li class="level3"><a href="#">블렌디드</a></li>
+                            <li class="level3"><a href="#">스타벅스 리프레셔</a></li>
+                            <li class="level3"><a href="#">스타벅스 피지오</a></li>
+                            <li class="level3"><a href="#">티(티바나)</a></li>
+                            <li class="level3"><a href="#">기타 제조 음료</a></li>
+                            <li class="level3"><a href="#">스타벅스 주스(병음료)</a></li>                            
+                        </ul>
+                    </li>
+                    <li class="level2">
+                        <a href="#">푸드</a>
+                        <ul>
+                            <li class="level3"><a href="#">브레드</a></li>
+                            <li class="level3"><a href="#">케이크</a></li>
+                            <li class="level3"><a href="#">샌드위치 & 샐러드</a></li>
+                            <li class="level3"><a href="#">따뜻한 푸드</a></li>
+                            <li class="level3"><a href="#">과일 & 요거트</a></li>
+                            <li class="level3"><a href="#">스낵 & 미니 디저트</a></li>
+                            <li class="level3"><a href="#">아이스크림</a></li>                            
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="level1 clearfix">
+                <a href="#">STORE</a>
+                <ul>
+                    <li class="level2">
+                        <a href="#">매장찾기</a>
+                        <ul>
+                            <li class="level3"><a href="#">퀵 검색</a></li>
+                            <li class="level3"><a href="#">지역 검색</a></li>
+                        </ul>
+                    </li>
+                    <li class="level2">
+                        <a href="#">드라이브 스루 매장</a>
+                    </li>
+                    <li class="level2">
+                        <a href="#">스타벅스 리저브 매장</a>
+                    </li>
+                    <li class="level2">
+                        <a href="#">커뮤니티 스토어 매장</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="level1 clearfix">
+                <a href="#">RESPONSIBILITY</a>
+                <ul>
+                    <li class="level2">
+                        <a href="#">사회공헌 캠페인 소개</a>
+                    </li>
+                    <li class="level2">
+                        <a href="#">지역 사회 참여 활동</a>
+                        <ul>
+                            <li class="level3"><a href="#">희망배달 캠페인</a></li>
+                            <li class="level3"><a href="#">재능기부 카페 소식</a></li>
+                            <li class="level3"><a href="#">커뮤니티 스토어</a></li>
+                            <li class="level3"><a href="#">청년 지원 프로그램</a></li>
+                            <li class="level3"><a href="#">우리 농산물 사랑 캠페인</a></li>
+                            <li class="level3"><a href="#">우리 문화 지키기</a></li>                            
+                        </ul>
+                    </li>
+                    <li class="level2">
+                        <a href="#">사회공헌 캠페인 소개</a>
+                    </li>
+                    <li class="level2">
+                        <a href="#">지역 사회 참여 활동</a>
+                        <ul>
+                            <li class="level3"><a href="#">희망배달 캠페인</a></li>
+                            <li class="level3"><a href="#">재능기부 카페 소식</a></li>
+                            <li class="level3"><a href="#">커뮤니티 스토어</a></li>
+                            <li class="level3"><a href="#">청년 지원 프로그램</a></li>
+                            <li class="level3"><a href="#">우리 농산물 사랑 캠페인</a></li>
+                            <li class="level3"><a href="#">우리 문화 지키기</a></li>                            
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
